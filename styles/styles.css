@@ -1198,19 +1198,24 @@ footer {
   background-position: center;
   cursor: pointer;
 }
+
 .modal_close_button:hover {
   outline: 2px solid #ff2f64;
 }
+
 .modal_close_button:focus {
   outline: 2px solid #ff2f64;
 }
+
 .modal_close_button:active {
   outline: 4px solid #ff2f64;
 }
+
 .auth_form_modal {
   display: flex;
   flex-direction: column;
- }
+}
+
 .modal_title {
   font-style: normal;
   font-weight: 700;
@@ -1246,9 +1251,11 @@ footer {
 .modal_content input::-webkit-input-placeholder {
   color: #B9B9B9;
 }
+
 .field_text {
   resize: vertical;
 }
+
 .modal-container-close {
   display: none;
 }
@@ -1284,7 +1291,12 @@ footer {
   top: 20px;
   left: 0;
   z-index: 2;
-  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  visibility: hidden;
+  transition-property: opacity, transform, visibility;
+  transition-duration: 0.3s;
+
 }
 
 .sub_menu {
@@ -1322,7 +1334,9 @@ footer {
 .navigation_link:focus+.popover_catalog,
 .popover_catalog:hover,
 .popover_catalog:focus {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .sub_menu_item:hover {
@@ -1347,7 +1361,9 @@ footer {
 .link_search:focus+.form_wrap,
 .form_wrap:hover,
 .form_wrap:focus-within {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .form_wrap {
@@ -1355,8 +1371,12 @@ footer {
   position: absolute;
   right: 0px;
   top: 20px;
-  display: none;
   z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition-property: opacity, visibility, transform;
+  transition-duration: 0.3s;
 }
 
 .search_form {
@@ -1396,15 +1416,21 @@ footer {
   top: 20px;
   right: 0px;
   z-index: 3;
-  display: none;
   padding-top: 30px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition-property: opacity, visibility, transform;
+  transition-duration: 0.3s;
 }
 
 .link_log:hover+.popover_auth,
 .link_log:focus .popover_auth,
 .popover_auth:hover,
 .popover_auth:focus {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .popove_content {
@@ -1472,7 +1498,9 @@ footer {
 .link_corb:focus+.popover_card,
 .popover_card:focus,
 .popover_card:hover {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .popover_card {
@@ -1481,7 +1509,11 @@ footer {
   top: 20px;
   z-index: 1;
   padding-top: 30px;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition-property: opacity, visibility, transform;
+  transition-duration: 0.3s;
 }
 
 .popover_content {
