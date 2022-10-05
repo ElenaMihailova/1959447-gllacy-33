@@ -4,10 +4,9 @@
 * Наставник: [Николай Думчев](https://htmlacademy.ru/profile/nikopol-fw).
 
 ---
-
-<a href="https://elenamihailova.github.io/1959447-gllacy-33/">
-  <img href="https://user-images.githubusercontent.com/96042722/194110193-5e4a33ec-f324-4940-bcaa-b82ebb31777b.svg" width="40px" height="40px"
+  <img align="center" src="https://user-images.githubusercontent.com/96042722/194110193-5e4a33ec-f324-4940-bcaa-b82ebb31777b.svg" width="100px" height="100px"
        alt="Ice cream"/>
+<a href="https://elenamihailova.github.io/1959447-gllacy-33/">
   Click here </a>
 
 ---
